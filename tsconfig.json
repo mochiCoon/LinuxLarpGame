@@ -1,0 +1,41 @@
+{
+	"compilerOptions": {
+		// required for Flamework
+		"experimentalDecorators": true,
+		"plugins": [{ "transform": "rbxts-transformer-flamework" }],
+
+		// required by roblox-ts
+		"allowSyntheticDefaultImports": true,
+		"downlevelIteration": true,
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"noLib": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleDetection": "force",
+		"strict": true,
+		"target": "ESNext",
+		"typeRoots": ["node_modules/@rbxts", "node_modules/@flamework"],
+
+		// JSX for @rbxts/react
+		"jsx": "react",
+		"jsxFactory": "React.createElement",
+		"jsxFragmentFactory": "React.Fragment",
+
+		// build output
+		"rootDir": "src",
+		"outDir": "out",
+		"incremental": true,
+		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo",
+		"declaration": false,
+
+		// path aliases
+		"baseUrl": "src",
+		"paths": {
+			"shared/*": ["shared/*"],
+			"server/*": ["server/*"],
+			"client/*": ["client/*"],
+			"types/*": ["types/*"]
+		}
+	}
+}

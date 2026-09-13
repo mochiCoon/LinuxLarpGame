@@ -1,0 +1,5 @@
+# Tools managed by Aftman, a cross-platform toolchain manager.
+# https://github.com/LPGhatguy/aftman
+
+[tools]
+rojo = "rojo-rbx/rojo@7.7.0"
